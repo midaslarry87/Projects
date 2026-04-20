@@ -1,7 +1,11 @@
 
-imageFile = "gif", ".jpg", ".png", ".jpeg"
-applicationFile = ".pdf", "zip"
-textFile = ".text"
+imageFile = "gif", "jpg", "png", "jpeg"
+applicationFile = "pdf", "zip"
+textFile = "text"
+
+newfileName = ""
+
+#fileName = input("File name: ").lower()
 
 fileTypeName = input("File name: ").strip().split(".")
 
@@ -17,6 +21,4 @@ if fileTypeName[1] in imageFile:
 elif fileTypeName[1] in applicationFile:
     print("application/",fileTypeName[1])
 
-print(fileTypeName)
-
-# if 
+print(fileTypeName)    
