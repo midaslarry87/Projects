@@ -1,13 +1,14 @@
 
-def main():
+# def main():
 
-    print(cal)
+#     print(cal)
 
-def cal (x, y, z):
+def cal ():
 
     calc = input("Expression: " )
     valid = calc(int(x), y, int(z))
 
     return valid 
 
-main(cal)
+print(cal())
+# main()
