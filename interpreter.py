@@ -1,14 +1,35 @@
 
-# def main():
+def myCount (f, g, h):
+    getCal = input("Expression: ")
 
-#     print(cal)
+    print(getCal.strip().split())
 
-def cal ():
+    print(getCal.strip().split(","))
 
-    calc = input("Expression: " )
-    valid = calc(int(x), y, int(z))
+    q = getCal.split(" ")
 
-    return valid 
+    print(q[0])
+    print(type(q[0]))
 
-print(cal())
-# main()
+    print(q[1])
+
+    print(q[2])
+
+    print(type(q))
+
+    print("This is below the type of q")
+
+    f = float(q[0])
+    g = q[1]
+    h = float(q[2])
+
+    return 
+
+# totalCount = (f , g, h )
+
+# print(float(totalCount))
+
+# print(totalCount)
+
+myCount()
+
