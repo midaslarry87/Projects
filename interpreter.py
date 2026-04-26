@@ -1,29 +1,29 @@
 
-def myCount (f, g, h):
-    getCal = input("Expression: ")
+# def myCount (f, g, h):
+    # getCal = input("Expression: ")
 
-    print(getCal.strip().split())
+    # print(getCal.strip().split())
 
-    print(getCal.strip().split(","))
+    # print(getCal.strip().split(","))
 
-    q = getCal.split(" ")
+    # q = getCal.split(" ")
 
-    print(q[0])
-    print(type(q[0]))
+    # print(q[0])
+    # print(type(q[0]))
 
-    print(q[1])
+    # print(q[1])
 
-    print(q[2])
+    # print(q[2])
 
-    print(type(q))
+    # print(type(q))
 
-    print("This is below the type of q")
+    # print("This is below the type of q")
 
-    f = float(q[0])
-    g = q[1]
-    h = float(q[2])
+    # f = float(q[0])
+    # g = q[1]
+    # h = float(q[2])
 
-    return 
+    # return 
 
 # totalCount = (f , g, h )
 
@@ -31,5 +31,49 @@ def myCount (f, g, h):
 
 # print(totalCount)
 
-myCount()
+# myCount()
 
+# getCal = input("Expression: ")
+
+# print(getCal.strip().split())
+
+# print(getCal.strip().split(","))
+
+# q = getCal.split(" ")
+
+# print(q[0])
+# print(type(q[0]))
+
+# print(q[1])
+
+# print(q[2])
+
+# print(type(q))
+
+# print("This is below the type of q")
+
+# f = float(q[0])
+# g = q[1].
+# h = float(q[2])
+
+# p = g.strip('')
+# print(type(p))
+
+# print(eval(f,p,h))
+# # if g.re
+# #     print(g)
+# #     print(type(g))
+# #     pri
+
+
+def ConvString():
+    getCal = input("Expression: ")
+
+    expression = eval(getCal)
+
+    print(f"{expression:.1f}")
+
+    # print(expression)
+
+
+ConvString()
