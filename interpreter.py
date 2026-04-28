@@ -9,14 +9,12 @@
 # ConvString()
 
 
-# My way of solving this issue 
+# My own way of solving this issue 
 
 def getValue ():
     acceptString = input("Expression: ")
 
-    stringSlice = acceptString.strip().split()
-
-    print(stringSlice)
+    stringSlice = acceptString.split()
 
     f = float(stringSlice[0])
     g = stringSlice[1]
@@ -35,10 +33,6 @@ def getValue ():
     elif g == '/':
         getCal = f / h 
 
-    # getCal = f"{f + {g} + h}"
-
-    print(type(getCal))
-
-    print(getCal)
+    print(f"{getCal:.1f}")
 
 getValue()
