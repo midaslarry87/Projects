@@ -1,50 +1,55 @@
-myString = ""
+#### METHOD 1 ####
 
-getName = input("camelCase: ")
+# myString = ""
 
-if getName.title():
+# getName = input("camelCase: ")
+
+# if getName.title():
         
-        for n in getName:
-            getSmall = n.lower()
+#         for n in getName:
+#             getSmall = n.lower()
             
-            if n in n.upper():
+#             if n in n.upper():
 
-                getReplace = n.replace(n, "_")
-                # adWords = getSmall.join(getReplace)
-                myString += getReplace
-                print(getReplace)
-            myString += getSmall
-            #print(myString)
-        #print("snake_case: ", ansW)
+#                 getReplace = n.replace(n, "_")
+               
+#                 myString += getReplace
+#                 # print(getReplace)
+#             myString += getSmall
             
 
-print("snake_case: " + myString)
+# print("snake_case: " + myString)
 
-# stringWDash = ""
-# stringNoDash = ""
-# stringLower = ""
+#### METHOD 2 ####
 
-# enterCamelCase = input("camelCase: ")
+stringWDash = ""
+stringNoDash = ""
+stringLower = ""
 
-# for word in enterCamelCase:
-#     if word in enterCamelCase.upper():
-#         repL = word.replace(word, "_")
-#         print(repL)
-#         stringLower += word.lower()
-#         stringWDash += repL
+enterCamelCase = input("camelCase: ")
+
+for n in enterCamelCase:
+    if n in enterCamelCase.lower():
+        stringNoDash += n 
+        stringWDash = stringNoDash
+
+
+for word in enterCamelCase:
+    if word in enterCamelCase.upper():
+        repL = word.replace(word, "_")
+        print(repL)
+        stringLower += word.lower()
+        stringWDash += repL
         
 
 
-# for n in enterCamelCase:
-#     if n in enterCamelCase.lower():
-#         stringNoDash += n 
 
 
-# # for 
 
-# print(stringWDash)
-# print(stringLower)
-# print(stringNoDash)
+# for 
 
-# print(stringLower,stringWDash, stringNoDash)
-# print(stringNoDash+stringWDash+stringLower)
+print(stringWDash)
+print(stringLower)
+print(stringNoDash)
+
+print("snake_case: " + stringNoDash)
