@@ -1,24 +1,34 @@
 
-getName = input("camelCase: ")
 
+def main():
 
-if getName.title():
-    for n in getName:
-        getSmall = n.lower()
-        if n in n.upper():
+    global getName
 
-            getReplace = n.replace(n, "_")
-            # adWords = getSmall.join(getReplace)
+    getName = input("camelCase: ")
 
-             #.join(getReplace)
-            print(getReplace)
-        print(getSmall)
-        # print(adWords)
+    print("I got here")
+def camelCase(main):
+    print("I am here")
+
+    if getName.title():
+        for n in getName:
+            getSmall = n.lower()
             
-    
-    mysplit = getName.split()
+            if n in n.upper():
+
+                getReplace = n.replace(n, "_")
+                # adWords = getSmall.join(getReplace)
+
+                #.join(getReplace)
+                return getReplace
+                # print(getReplace)
+            #print(getSmall)
+            
+        return getSmall
     print("snake_case:", getSmall)
     #print("snake_case:", getName)
-    print(mysplit)
+    print("Hi")
+# main()
 
+main()
 
