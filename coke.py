@@ -5,7 +5,6 @@ print("Amount Due:", amount)
 
 payment = int()
 
-# print("This is the payment outside the loop: ", payment)
 
 account = 0
 
@@ -15,11 +14,11 @@ while True:
 
     account += pay
 
-    #print(account)
 
     if account < amount:
         balance = amount - account 
         print("Amount Due: ", balance)
+
 
 
     elif account == amount:
@@ -28,7 +27,9 @@ while True:
 
         break
 
-    else:
+    elif account > amount:
+        balance = account - amount
+        print("Change Owed: ", balance)
         
         break
 
