@@ -4,10 +4,14 @@ fruits = {"Apple":130, "Avocado": 50, "Banana": 110, "Cantaloupe": 50, "Grapefru
            "Plums": 70, "Strawberries": 50, "Sweet Cherries": 100, "Tangerine": 50, "Watermelon": 80}
 
 
-nameOfFruits = input("Item: ")
+nameOfFruits = input("Item: ").title()
+
+# print(nameOfFruits)
 
 for f in fruits:
+    # print(f)
     if nameOfFruits in f:
+        # print(nameOfFruits)
         print("Calories:", fruits.get(nameOfFruits))
 
 
