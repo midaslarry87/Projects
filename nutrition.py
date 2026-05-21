@@ -6,12 +6,11 @@ fruits = {"Apple":130, "Avocado": 50, "Banana": 110, "Cantaloupe": 50, "Grapefru
 
 nameOfFruits = input("Item: ").title()
 
-# print(nameOfFruits)
 
 for f in fruits:
-    # print(f)
+    
     if nameOfFruits in f:
-        # print(nameOfFruits)
+        
         print("Calories:", fruits.get(nameOfFruits))
 
 
