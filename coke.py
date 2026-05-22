@@ -5,7 +5,6 @@ print("Amount Due:", amount)
 
 payment = int()
 
-
 account = 0
 
 while True:
@@ -18,7 +17,6 @@ while True:
     if account < amount:
         balance = amount - account 
         print("Amount Due: ", balance)
-
 
 
     elif account == amount:
