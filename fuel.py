@@ -1,13 +1,42 @@
+try:
 
-fuelGauge =  input("Fraction: ").split("/")
+    fuelGauge =  input("Fraction: ").split("/")
 
-print(fuelGauge)
+    #print(fuelGauge)
 
-x = fuelGauge[0]
-y = fuelGauge[1]
+    x = fuelGauge[0]
+    y = fuelGauge[1]
 
-print(x, y)
+    #print(x, y)
 
-fuelPercentage = int(x)/int(y) * 100
+    fuelPercentage = int(x)/int(y) * 100
 
-print(f"{fuelPercentage:.0f}%")
+    if fuelPercentage == 100:
+        print("F")
+
+    elif fuelPercentage == 0:
+        print("E")
+
+    else:
+    
+        print(f"{fuelPercentage:.0f}%")
+
+except ZeroDivisionError:
+
+    pass
+
+except ValueError:
+    pass
+
+except TypeError:
+    pass   # try: 
+
+    #     if fuelPercentage == 0:
+    #         pass
+
+    # except SyntaxError:
+    #     pass
+    # #print("Can't divide by zero")
+
+
+    # print(f"{fuelPercentage:.0f}%")
