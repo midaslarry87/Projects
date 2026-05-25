@@ -1,42 +1,38 @@
-try:
 
-    fuelGauge =  input("Fraction: ").split("/")
+while True:
 
-    #print(fuelGauge)
+    try:
 
-    x = fuelGauge[0]
-    y = fuelGauge[1]
+        fuelGauge =  input("Fraction: ").split("/")
 
-    #print(x, y)
+        #print(fuelGauge)
 
-    fuelPercentage = int(x)/int(y) * 100
+        x = fuelGauge[0]
+        y = fuelGauge[1]
 
-    if fuelPercentage == 100:
-        print("F")
+        #print(x, y)
 
-    elif fuelPercentage == 0:
-        print("E")
+        fuelPercentage = int(x)/int(y) * 100
 
-    else:
-    
-        print(f"{fuelPercentage:.0f}%")
+        if fuelPercentage == 100:
+            print("F")
+            break
 
-except ZeroDivisionError:
+        elif fuelPercentage == 0:
+            print("E")
+            break
 
-    pass
+        else:
+        
+            print(f"{fuelPercentage:.0f}%")
+            break
 
-except ValueError:
-    pass
+    except ZeroDivisionError:
 
-except TypeError:
-    pass   # try: 
+        pass
 
-    #     if fuelPercentage == 0:
-    #         pass
+    except ValueError:
+        pass
 
-    # except SyntaxError:
-    #     pass
-    # #print("Can't divide by zero")
-
-
-    # print(f"{fuelPercentage:.0f}%")
+    except TypeError:
+        pass   
