@@ -19,23 +19,11 @@ while True:
     pay = input("Item: ").title()
 
     for m in menu.items():
-        #print(m)
+        
         if pay in m:
             amount += menu.get(pay)
             #print(f"Total: ${menu.get(pay):.2f}") 
             print(f"Total: ${amount:.2f}")
-
-        # print(m)
-
-# while True:
-
-#     pay = input("Item: ").title()
-
-
-#     for m in menu:
-#         print(m)
-
-
 
 
 
