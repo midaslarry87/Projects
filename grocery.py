@@ -3,20 +3,14 @@ groceries = []
 
 my_dic = {}
 
-# goods = ()
-
-print(type(groceries))
-
 while True:
 
-    user_input = input()
+    user_input = input().upper()
 
     if user_input  == "":
         break
 
     try:
-
-        # prompt = input()
 
         if user_input != "":
 
@@ -31,15 +25,10 @@ while True:
 # This is getting the information to be converted to dictionary 
 
 for g in groceries:
-    # result = goods.count(groceries)
+   
     result = groceries.count(g)
 
-    # items[result] = g
-
     my_dic[g] = result
-
-    # print(result)
-    # print(g)
 
 print(my_dic)
 
