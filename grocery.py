@@ -1,9 +1,9 @@
 
 groceries = []
 
-items = {}
+my_dic = {}
 
-goods = ()
+# goods = ()
 
 print(type(groceries))
 
@@ -28,6 +28,7 @@ while True:
     except TypeError:
         pass
 
+# This is getting the information to be converted to dictionary 
 
 for g in groceries:
     # result = goods.count(groceries)
@@ -35,9 +36,15 @@ for g in groceries:
 
     # items[result] = g
 
-    items[g] = result
+    my_dic[g] = result
 
-    print(result)
-    print(g)
+    # print(result)
+    # print(g)
 
-    print(items)
+print(my_dic)
+
+# This is for unpacking the dictionary 
+
+for k, v in my_dic.items():
+    print(v, k)
+
