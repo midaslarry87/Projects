@@ -18,9 +18,15 @@ months = [
 
 dates = input("Date: ").split("/")
 
-d = dates[0]
-m = dates[1]
+# d = dates[0]
+# m = dates[1]
+# y = dates[2]
+
+m = dates[0]
+d = dates[1]
 y = dates[2]
+
+
 
 print(dates)
 
@@ -31,19 +37,16 @@ print(type(d))
 
 takeNewDate = y, m , d 
 
+print(len(m))
 print(len(d))
+print(len(y))
 
 print("Before the if statement")
 
-if len(m) != 2 or len(d) != 2:
+if len(m) != 2 and len(d) != 2:
 
-    print("this is after the if len")
-     
-    # mm = dates.append(0)
-
-    # mm = dates.insert(0, "0")
-    # dd = dates.insert(0, "0")
-
+    print("this is inside the if len")
+    
     z = ""
 
     twoDigitFormat = z, m, d  
@@ -52,13 +55,42 @@ if len(m) != 2 or len(d) != 2:
 
     conc = "-0".join(twoDigitFormat)
 
-    print("b4 the len")
+    # print("b4 the len")
 
-    print(y)
+    # print(y)
 
     # print("".join(twoDigitFormat))
 
     print(y+(conc))
+
+# This is the flow for the Months 
+
+elif len(m) != 2:
+
+    z = ""
+
+    mD = z, m
+
+    mDigit = "-0".join(mD)
+
+    print(y)
+
+    print(y + (mDigit) + "-"+ d)
+
+    print("This is mDightPrint: " + mDigit)
+    
+# This is the flow for the Days 
+
+elif len(d) != 2:
+
+    z = ""
+
+    dD = z, d
+
+    dDigit = "-0".join(dD)
+
+    print("This is mDightPrint: " + dDigit)
+    print(y + "-"+ m + dDigit )
 
 else:
 
