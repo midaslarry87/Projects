@@ -26,26 +26,28 @@ m = dates[0]
 d = dates[1]
 y = dates[2]
 
+# This was use for testing purpose 
 
+# print(dates)
 
-print(dates)
-
-print(type(m))
-print(type(d))
+# print(type(m))
+# print(type(d))
 
 # print(y,m,d)
 
 takeNewDate = y, m , d 
 
-print(len(m))
-print(len(d))
-print(len(y))
+# This was use for testing purpose 
 
-print("Before the if statement")
+# print(len(m))
+# print(len(d))
+# print(len(y))
+
+# print("Before the if statement")
 
 if len(m) != 2 and len(d) != 2:
 
-    print("this is inside the if len")
+    # print("this is inside the if len")
     
     z = ""
 
@@ -73,11 +75,11 @@ elif len(m) != 2:
 
     mDigit = "-0".join(mD)
 
-    print(y)
+    #print(y)
 
     print(y + (mDigit) + "-"+ d)
 
-    print("This is mDightPrint: " + mDigit)
+    #print("This is mDightPrint: " + mDigit)
     
 # This is the flow for the Days 
 
@@ -89,20 +91,20 @@ elif len(d) != 2:
 
     dDigit = "-0".join(dD)
 
-    print("This is mDightPrint: " + dDigit)
+    #print("This is mDightPrint: " + dDigit)
     print(y + "-"+ m + dDigit )
 
 else:
 
-    print("This is inside the else ")
+    #print("This is inside the else ")
 
     print("-0".join(takeNewDate))
 
 # print(len(m))
 
-print("This is after the if")
+# print("This is after the if")
     
-print(m, d)
+# print(m, d)
 
 # print("-0".join(takeNewDate))
 
