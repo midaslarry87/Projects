@@ -14,113 +14,105 @@ months = [
     "December"
 ]
 
-# Date should be showing as YYYY-MM-DD
+while True:
+        
+        try:
 
-dates = input("Date: ").split("/")
+            # for m in months:
+            #      print(m)
+        
+        # Date should be showing as YYYY-MM-DD
 
-# d = dates[0]
-# m = dates[1]
-# y = dates[2]
+            dates = input("Date: ").split("/")
 
-m = dates[0]
-d = dates[1]
-y = dates[2]
+            print(dates)
+            print(type(dates))
 
-# This was use for testing purpose 
+            for m in months:
+                 if m in dates:
+                      print(m)
+                #  pass
+                #  if m in dates.
+                 
 
-# print(dates)
+            # d = dates[0]
+            # m = dates[1]
+            # y = dates[2]
 
-# print(type(m))
-# print(type(d))
+            m = dates[0]
+            d = dates[1]
+            y = dates[2]
 
-# print(y,m,d)
+            takeNewDate = y, m , d 
 
-takeNewDate = y, m , d 
+            # print("Before the if statement")
 
-# This was use for testing purpose 
+            if len(m) != 2 and len(d) != 2:
+                
+                z = ""
 
-# print(len(m))
-# print(len(d))
-# print(len(y))
+                twoDigitFormat = z, m, d  
 
-# print("Before the if statement")
+                # print("-0".join(twoDigitFormat))
 
-if len(m) != 2 and len(d) != 2:
-
-    # print("this is inside the if len")
-    
-    z = ""
-
-    twoDigitFormat = z, m, d  
-
-    # print("-0".join(twoDigitFormat))
-
-    conc = "-0".join(twoDigitFormat)
-
-    # print("b4 the len")
-
-    # print(y)
-
-    # print("".join(twoDigitFormat))
-
-    print(y+(conc))
-
-# This is the flow for the Months 
-
-elif len(m) != 2:
-
-    z = ""
-
-    mD = z, m
-
-    mDigit = "-0".join(mD)
-
-    #print(y)
-
-    print(y + (mDigit) + "-"+ d)
-
-    #print("This is mDightPrint: " + mDigit)
-    
-# This is the flow for the Days 
-
-elif len(d) != 2:
-
-    z = ""
-
-    dD = z, d
-
-    dDigit = "-0".join(dD)
-
-    #print("This is mDightPrint: " + dDigit)
-    print(y + "-"+ m + dDigit )
-
-else:
-
-    #print("This is inside the else ")
-
-    print("-0".join(takeNewDate))
-
-# print(len(m))
-
-# print("This is after the if")
-    
-# print(m, d)
-
-# print("-0".join(takeNewDate))
-
-newDate = dates
-
-for check in dates:
-    pass
-
-# isoDate = "".join(y)
-
-# print(isoDate)
-
-#print("-0".join(reversed(newDate)))
-
-# for l in months:
-#     print(l)
+                conc = "-0".join(twoDigitFormat)
 
 
+                print(y+(conc))
 
+                break
+
+            # This is the flow for the Months 
+
+            elif len(m) != 2:
+
+                z = ""
+
+                mD = z, m
+
+                mDigit = "-0".join(mD)
+
+                print(y + (mDigit) + "-"+ d)
+
+                break
+
+                #print("This is mDightPrint: " + mDigit)
+                
+            # This is the flow for the Days 
+
+            elif len(d) != 2:
+
+                z = ""
+
+                dD = z, d
+
+                dDigit = "-0".join(dD)
+
+                #print("This is mDightPrint: " + dDigit)
+                print(y + "-"+ m + dDigit )
+
+                break
+
+            # newDate = dates
+
+            # for check in dates:
+            #     pass
+
+            # for m in months:
+            #      print(m)
+
+            else:
+                #print("This is inside the else ")
+
+                print("-".join(takeNewDate))
+                
+                break 
+
+
+        except IndexError:
+             pass
+        
+        except ValueError:
+             pass
+        
+        
