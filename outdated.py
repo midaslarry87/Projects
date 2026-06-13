@@ -25,12 +25,12 @@ while True:
 
             dates = input("Date: ").split("/")
 
-            print(dates)
-            print(type(dates))
+            # print(dates)
+            # print(type(dates))
 
-            for m in months:
-                 if m in dates:
-                      print(m)
+            # for m in months:
+            #      if m in dates:
+            #           print(m)
                 #  pass
                 #  if m in dates.
                  
@@ -92,14 +92,6 @@ while True:
                 print(y + "-"+ m + dDigit )
 
                 break
-
-            # newDate = dates
-
-            # for check in dates:
-            #     pass
-
-            # for m in months:
-            #      print(m)
 
             else:
                 #print("This is inside the else ")
