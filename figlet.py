@@ -1,16 +1,31 @@
-import sys
 import pyfiglet
+import sys
+
+req = input("Input: ")
 
 print(len(sys.argv))
 
-if len(sys.argv) == 2:
-    print("Invalid usage")
+if len(sys.argv) <= 2:
+    output = pyfiglet.figlet_format(req)
 
-    sys.exit
+    print("Output:" "\n" + output)
 
-stats = input("Input: ")
+elif len(sys.argv) > 2 and (sys.argv[1]) == "-f" or (sys.argv[1]) == "--font":
+    output = pyfiglet.figlet_format(req, font=sys.argv[2])
 
+    print("Output: " + "\n" + output)
 
-print("Output: ", "\n" + pyfiglet.figlet_format(stats))
+# elif len(sys.argv) > 2 and (sys.argv[1]) == (sys.argv[1]):
+#     output = pyfiglet.figlet_format(req, font=sys.argv[2])
 
-# pyfiglet.figlet_format()
+#     print(output)
+
+elif len(sys.argv) > 1 and (sys.argv[1]) != "-f" or (sys.argv[1]) != "--font":
+    print("I am exiting")
+    sys.exit()
+
+# else:
+#     sys.exit
+# print(m)
+
+# print((sys.argv[1]))
