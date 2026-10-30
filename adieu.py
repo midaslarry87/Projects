@@ -16,7 +16,7 @@ while True:
         break
 
 
-if len(nameList) > 1:
+if len(nameList) > 2:
     print(len(nameList))
 
     lastWord += nameList[-1]
@@ -28,7 +28,7 @@ if len(nameList) > 1:
 
     for n in nameList[:-1]:
         print(n)
-        myString += n + " " + ",".strip("")
+        myString += n + "," + " "
 
     print(myString + "and " + lastWord)
 
