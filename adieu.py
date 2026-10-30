@@ -3,7 +3,7 @@ myString = "Adiue, adieu, to "
 
 nameList = []
 
-lastWord =""
+lastWord = ""
 
 while True:
 
@@ -15,12 +15,30 @@ while True:
     except EOFError:
         break
 
-for n in nameList:
-    print(n)
-    if n in nameList[-1]:
-        lastWord += n
-    myString += n + " "
+
+if len(nameList) > 1:
+    print(len(nameList))
+
+    lastWord += nameList[-1]
 
 
-print(nameList)
-print(myString + "and " + lastWord)
+    # lastWord.append(nameList[-1])
+
+    #lastWord += nameList[-1]
+
+    for n in nameList[:-1]:
+        print(n)
+        myString += n + " " + ",".strip("")
+
+    print(myString + "and " + lastWord)
+
+elif len(nameList) == 1:
+    print(len(nameList))
+    oneWord = "".join(nameList)
+    print(myString + oneWord)
+
+
+
+# print("lastword: " + lastWord)
+# print(nameList)
+# print(myString)
