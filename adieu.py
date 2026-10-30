@@ -1,9 +1,26 @@
 
-listOfNames = ["Adieu", "adieu"]
+myString = "Adiue, adieu, to "
+
+nameList = []
+
+lastWord =""
 
 while True:
-    names = input("Name: ")
 
-    listOfNames.append(names)
+    try:
+        names = input("Name: ")
+        nameList.append(names)
 
-    print(listOfNames)
+
+    except EOFError:
+        break
+
+for n in nameList:
+    print(n)
+    if n in nameList[-1]:
+        lastWord += n
+    myString += n + " "
+
+
+print(nameList)
+print(myString + "and " + lastWord)
