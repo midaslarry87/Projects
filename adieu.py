@@ -15,12 +15,12 @@ while True:
         break
 
 if len(nameList) > 2:
-    print(len(nameList))
+    #print(len(nameList))
 
     lastWord += nameList[-1]
 
     for n in nameList[:-1]:
-        print(n)
+        #print(n)
         myString += n + "," + " "
 
     print(myString + "and " + lastWord)
