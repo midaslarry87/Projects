@@ -1,13 +1,14 @@
 
 
-def main():
+def main(camelCase):
 
     global getName
 
     getName = input("camelCase: ")
 
-    print("I got here")
-def camelCase(main):
+    print("FirstPrint")
+
+def camelCase():
     print("I am here")
 
     if getName.title():
@@ -30,5 +31,5 @@ def camelCase(main):
     print("Hi")
 # main()
 
-main()
+main(camelCase)
 
