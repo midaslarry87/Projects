@@ -6,8 +6,6 @@ import json
 
 myKey = "98e1d73a3b8b520cd33679211e062c9089e1801a9c722d05c15b1b91d7f01739"
 
-# print(myKey)
-
 try:
 
     if len(sys.argv) == 1:
@@ -30,13 +28,6 @@ try:
     r = requests.get(urlReal, amount)
 
     print(myKey)
-
-    # print(type(amount))
-    # print(type(sys.argv[1]))
-    # print(type(sys.argv[amount]))
-
-    # print(r.url)
-    # print(r.json())
 
     # print(json.dumps(r.json, indent=2))
     jdumps = json.dumps(r.json(), indent=2)
