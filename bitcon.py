@@ -27,13 +27,22 @@ try:
 
     r = requests.get(urlReal, amount)
 
-    print(myKey)
 
     # print(json.dumps(r.json, indent=2))
-    jdumps = json.dumps(r.json(), indent=2)
-    print(jdumps)
+    # jdumps = json.dumps(r.json(), indent=2)
+    # print(jdumps)
 
     print(r.status_code)
+
+    myJson = r.json()
+
+    for m in myJson["data"]:
+        # print
+        dataName = (m["name"])
+        dataPrice = m["priceUsd"]
+        # dataPrice = m["priceUsd"]
+
+        print(dataName + " " + dataPrice)
 
     # if r.status_code == "200":
     #     for b in jdumps["data"][]:
