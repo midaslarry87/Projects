@@ -6,6 +6,8 @@ import json
 
 myKey = "98e1d73a3b8b520cd33679211e062c9089e1801a9c722d05c15b1b91d7f01739"
 
+bitcoinPrice = []
+
 try:
 
     if len(sys.argv) == 1:
@@ -19,7 +21,7 @@ try:
         print("command line argument is not a number")
         sys.exit()
 
-    amount = int(sys.argv[1])
+    amount = float(sys.argv[1])
 
     # url = "https://rest.coincap.io/v3/assets/bitcoin?apiKey="
 
@@ -42,7 +44,16 @@ try:
         dataPrice = m["priceUsd"]
         # dataPrice = m["priceUsd"]
 
-        print(dataName + " " + dataPrice)
+        print(dataName + ":" + " " + dataPrice)
+
+        bitcoinPrice.append(dataPrice)
+
+        bitcoinCost = bitcoinPrice[0] * amount
+
+        bitcoinTotal = f"{bitcoinCost:,}"
+
+        print("Price: " + bitcoinTotal)
+
 
     # if r.status_code == "200":
     #     for b in jdumps["data"][]:
