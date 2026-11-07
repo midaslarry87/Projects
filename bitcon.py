@@ -11,8 +11,6 @@ bitcoinPrice = []
 
 try:
 
-    # bitcoinPrice = []
-
     if len(sys.argv) == 1:
         print("missing command-line argument")
         sys.exit()
@@ -32,7 +30,6 @@ try:
     myJson = r.json()
 
     for m in myJson["data"]:
-        # print
         dataName = (m["name"])
         dataPrice = m["priceUsd"]
 
@@ -46,7 +43,7 @@ try:
 
     bitcoinFraction = f"{bitcoinAmount:,.4f}"
 
-    print(bitcoinFraction)
+    print("$" + bitcoinFraction)
 
 except:
     pass
