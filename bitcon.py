@@ -15,7 +15,6 @@ try:
     if len(sys.argv) == 1:
         print("missing command-line argument")
         sys.exit()
-        # print("missing command-line argument")
 
     # check if the command argument is string after the program name
     elif (sys.argv[1].isalpha()):
@@ -47,10 +46,10 @@ try:
 
         # print(dataName +":" +" "+ dataPrice)
 
-    # assign the list to a string for the first iteam in the list
+    # assign the list to a string for the first item in the list
     bitcoinP = bitcoinPrice[0]
 
-    # change the string to float and multiple it and assign to a variable bitcoinAmount
+    # change the string to float and multiply it and assign to a variable bitcoinAmount
     bitcoinAmount = float(bitcoinP) * amount
 
     # use the format method to create/use for thousand number , and 4 digit after the .dot
