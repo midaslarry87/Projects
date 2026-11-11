@@ -19,10 +19,7 @@ while True:
 
         total = int(input())
 
-        #print(type(total))
-
         result = (x + y)
-        #print(type(result))
 
         print(total, result)
 
@@ -32,7 +29,7 @@ while True:
         elif total != result:
             count += 1
             print("EEE")
-            print(count)
+            # print(count)
             if count > 2:
                 print("Score: ", score)
                 break
