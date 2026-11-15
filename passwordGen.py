@@ -1,10 +1,11 @@
 import random
 
 password = ""
-fpassword = ""
+fPassword = ""
 
 alphLo = "abcdefghijklmnopqrstuvwxyz"
 alphUp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+numb = "0123456789"
 
 specialSyn = "!@#$%^&*()-_=+[]{}|;:"
 
@@ -17,10 +18,10 @@ for _ in range(level):
     password += random.choice(alphLo)
     password += random.choice(alphUp)
     password += random.choice(specialSyn)
+    password += random.choice(numb)
+
+    fPassword += random.choice(password)
 
 print(password)
 
-for c in password:
-    fpassword += random.choices(c)
-
-print(fpassword)
+print(fPassword)
