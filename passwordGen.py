@@ -31,3 +31,16 @@ for _ in range(level):
 # print(password)
 # Print out the final password strings (Characters)
 print(fPassword)
+
+# Check for the length how strong the password is
+if len(fPassword) <= 6:
+    print("Password Quality: Poor")
+
+elif len(fPassword) > 6 and len(fPassword) < 12:
+    print("Password Quality: Weak")
+
+elif len(fPassword) > 12 and len(fPassword) < 16:
+    print("Password Quality: Good")
+
+else:
+    print("Password Quality: Excellent")
