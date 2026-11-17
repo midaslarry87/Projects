@@ -1,13 +1,18 @@
+# Import the request, sys model
 import requests
 import sys
 import json
 
+# The api key
 myKey = "98e1d73a3b8b520cd33679211e062c9089e1801a9c722d05c15b1b91d7f01739"
 
+# Create a variable placeholder where the json file is stored/kept
 myFile = r"C:\Users\root\Documents\jsonfile.json"
 
+# Create an empty list
 bitcoinPrice = []
 
+# Try and Catch exception
 try:
 
     # bitcoinPrice = []
