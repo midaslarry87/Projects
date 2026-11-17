@@ -36,10 +36,10 @@ print(fPassword)
 if len(fPassword) <= 6:
     print("Password Quality: Poor")
 
-elif len(fPassword) > 6 and len(fPassword) < 12:
+elif  6 and len(fPassword) <= 12:
     print("Password Quality: Weak")
 
-elif len(fPassword) > 12 and len(fPassword) < 16:
+elif 12 and len(fPassword) <=16:
     print("Password Quality: Good")
 
 else:
