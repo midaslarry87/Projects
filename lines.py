@@ -40,12 +40,35 @@ if len(sys.argv) == 2 and not file1.endswith(".py"):
 elif len(sys.argv) > 2:
     sys.exit("Too many command-line arguments")
 
+# for check in d:
+#     print(check)
+#     if check is file1:
+#         pass
+#     else:
+#         sys.exit("File does not exist")
+
+# for check in d:
+#     if sys.argv[1] in check:
+#         print("File found")
+#     else:
+#         print("do not exit")
+
+#     print(check)
 for check in d:
-    print(check)
-    # if check is file1:
-    #     pass
+    #print(check)
+    if sys.argv[1] == check:
+        print("Hi")
+        break
+
+for sCheck in d:
+    if sys.argv[1] not in check:
+        sys.exit("file does not exist")
+
     # else:
-    #     sys.exit("File does not exist")
+    #     sys.exit("file does not exist")
+    #     pass
+        #print("File does not exist")
+    #
 
 
 
