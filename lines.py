@@ -1,9 +1,9 @@
 import sys
 import os
 
-directory = r"C:\Users\root\Documents\MyProjects\cs50"
+directory = r"C:\Users\HafeezTukuru\Downloads\Projects"
 
-print(os.path.dirname(os.path.abspath(directory)))
+#print(os.path.dirname(os.path.abspath(directory)))
 
 #fileName = (sys.argv[1])
 #print(sys.argv[0])
@@ -12,7 +12,7 @@ print(os.path.dirname(os.path.abspath(directory)))
 
 #print(os.path.isdir(directory))
 
-print(os.path.abspath(directory))
+#print(os.path.abspath(directory))
 
 d = os.listdir(directory)
 
@@ -28,6 +28,7 @@ d = os.listdir(directory)
 
 
 #print(d)
+counter = 0
 
 if len(sys.argv) == 1:
     sys.exit("Too few command-line arguments")
@@ -45,7 +46,14 @@ for check in d:
     if sys.argv[1] == check:
         with open(sys.argv[1]) as f:
             lines = f.readlines()
+            print(type(lines))
             print(lines)
+            for line in lines:
+                #ln = line.strip().split(",")
+                #if l
+                print(line)
+                counter += 1
+            #print(ln)
         break
 
 for sCheck in d:
